@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Robot&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+header{
+    background: url(../img/ima.jpg) no-repeat center center/cover;
+    min-height: 100vh;
+    position: relative;         
+    z-index: -1;
+}
+header::before{
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.out_side_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+
+}
+.out_side_content h2{
+    font-size: 5rem;
+   
+}
+.out_side_content p{
+  
+    font-size: 1.5rem;
+    color: rgb(241, 194, 5);
+}
+.counters{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: #fff;
+    grid-gap: 2rem;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+.counters span{
+    display: block;
+}
+.time{
+    padding: 2rem;
+    color: rgb(31, 221, 10);
+    
+}
+.numbers{
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(243, 10, 10);
+}
+.wish button{
+    font-size: medium;
+    position: center;
+    text-align: center;
+}
+@media(max-width: 768px){
+    .out_side_content h2{
+        font-size: 3rem;
+    }
+    .out_side_content p{
+        font-size: 1.5rem;
+    }
+    .counters{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        color: #fff;
+        grid-gap: 1rem;
+        margin: 1rem 0;
+    }
+    .numbers{
+        font-size: 3.5rem;
+        font-weight: 800;
+    }
+}
